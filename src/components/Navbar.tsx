@@ -16,7 +16,7 @@ const Navbar = () => {
                   <Icons.logo className="h-10 w-10" />
                 </Link>
               </div>
-              <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
+              <div className="hidden z-50 sm:ml-8 md:ml-8 sm:block lg:self-stretch">
                 {/* NavItems */}
                 <NavItems />
               </div>
