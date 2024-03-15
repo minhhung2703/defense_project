@@ -18,6 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        pink_light: "#FED7E2",
+        pink_bold: "#EA4C89",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
