@@ -26,7 +26,7 @@ const Cart = () => {
           aria-hidden="true"
           className="h-6 w-6 flex-shrink-0 text-gray-400 group:hover:text-gray-500"
         />
-        <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+        <span className="ml-1 text-sm font-medium text-gray-700 group-hover:text-gray-800">
           0
         </span>
       </SheetTrigger>
@@ -61,7 +61,8 @@ const Cart = () => {
                   <Link
                     href="/cart"
                     className={buttonVariants({
-                      className: "w-full",
+                      className:
+                        "w-full bg-gradient-to-r from-pink-400 to-pink-500  duration-300 hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600",
                     })}
                   >
                     Continue to checkout
@@ -76,8 +77,21 @@ const Cart = () => {
               className="relative mb-4 h-60 w-60 text-muted-foreground"
               aria-hidden="true"
             >
-              <Image src="" alt="empty shopping cart" fill />
+              <Image src="/empty-cart1.png" alt="empty shopping cart" fill />
             </div>
+            <div className="text-xl font-semibold">Your cart is empty</div>
+            <SheetTrigger asChild>
+              <Link
+                href="/products"
+                className={buttonVariants({
+                  variant: "link",
+                  size: "sm",
+                  className: "text-sm text-muted-foreground text-pink-500",
+                })}
+              >
+                Add items to your cart to checkout
+              </Link>
+            </SheetTrigger>
           </div>
         )}
       </SheetContent>
